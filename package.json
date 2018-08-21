@@ -1,0 +1,25 @@
+{
+  "name": "vue-notebook",
+  "version": "1.0.0",
+  "description": "learning Vue.js",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoSkogen/vue-notebook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geoSkogen/vue-notebook/issues"
+  },
+  "homepage": "https://github.com/geoSkogen/vue-notebook#readme"
+}
