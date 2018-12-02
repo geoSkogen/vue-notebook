@@ -38,6 +38,7 @@ div.flexOuterSpaceBetween {
 
 header {
   position: relative;
+  width: 100%;
 }
 
 nav.wideNavHeadBand {
@@ -58,6 +59,19 @@ a.headerNav {
 a.headerNav:hover {
   border-bottom: 2px solid white;
 }
+
+.mobileSearchModal {
+  top: 30%;
+  background-color: gainsboro;
+  padding: 0.75em;
+  border-radius: 0.3px;
+  position: absolute;
+  width: 80%;
+  opacity: 0;
+  display: none;
+  z-index: 12;
+}
+
 nav.mobileNavMenu {
   background-color: lightsteelblue;
   z-index: 11;
@@ -105,7 +119,11 @@ input.window {
   border-radius: 3px;
   margin: 0.2em 0;
   font-size: 14px;
-  width: 50%;
+  //width: 50%;
+}
+
+#searchBar {
+  width: 80%;
 }
 
 button.door {

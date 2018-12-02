@@ -40,6 +40,12 @@
         <a class="mobileNav" href="#">shop</a><br/>
       </div>
     </nav>
+    <div class="flexOuterCenter">
+      <article class="mobileSearchModal">
+        <div class="flexOuterEnd"><span id="closeSearchModal">&times;</span></div>
+        <input type="text" id="searchBar" class="window"/>
+      </article>
+    <div class="flexOuterCenter">
     <header>
       <nav class="wideNavHeadBand">
         <div class="flexOuterSpaceBetween">
@@ -53,10 +59,9 @@
       <div class="mobileNavHeadBand">
         <div class="flexOuterSpaceBetween">
           <div class="flexOuterStart">
-            <span class="look">
+            <span class="look" id="openSearchModal">
               <i class="fa fa-search"></i>
             </span>
-            <input type="text" id="search" class="window"/>
           </div>
           <div class="flexOuterEnd">
             <div class="hamburger">
@@ -120,7 +125,10 @@
   </div>
 </body>
 
+<script src="lib/search-modal.js"></script>
+
 <script src="lib/mobile-nav-menu.js"></script>
+
 <script src="lib/script1.js"></script>
 
 </html>
