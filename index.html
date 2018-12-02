@@ -7,7 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
   <link rel="stylesheet" href="styles/vue-notebook-styles.css"/>
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 <!--<script>
   src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
@@ -16,29 +19,108 @@
 
 </head>
 <body>
-  <p id="one" class="testP"></p>
-  <p id="two" class="testP"></p>
-  <div id="app0">it's {{ message }}</div>
-  <div id="app1">
-    <a href="#" v-bind:title="message">oil.boil()</a>
-  </div>
-  <div id="app2">
-    <div v-if="seen">Don't fall in the olives' oil, boy!</div>
-  </div>
-  <button id="app2Butt">theNaj</button>
-  <div id="app3">
-    <ol>
-      <li v-for="todo in todos">
-        {{ todo.text }}
-      </li>
-    </ol>
-  </div>
-  <div id="app4">
-    <div>{{ message }}</div>
-    <input v-model="message"/>
+  <div id="appShell">
+    <nav class="mobileNavMenu">
+      <div class="flexOuterEnd">
+        <a class="mobileNav" id="closeMobileNav" href="#">&laquo;</a><br/>
+      </div>
+      <div class="flexOuterCenter">
+        <a class="mobileNav" href="#">home</a><br/>
+      </div>
+      <div class="flexOuterCenter">
+        <a class="mobileNav" href="#">about</a><br/>
+      </div>
+      <div class="flexOuterCenter">
+        <a class="mobileNav" href="#">contact</a><br/>
+      </div>
+      <div class="flexOuterCenter">
+        <a class="mobileNav" href="#">review</a><br/>
+      </div>
+      <div class="flexOuterCenter">
+        <a class="mobileNav" href="#">shop</a><br/>
+      </div>
+    </nav>
+    <header>
+      <nav class="wideNavHeadBand">
+        <div class="flexOuterSpaceBetween">
+          <a class="headerNav" href="#">home</a>
+          <a class="headerNav" href="#">about</a>
+          <a class="headerNav" href="#">contact</a>
+          <a class="headerNav" href="#">review</a>
+          <a class="headerNav" href="#">shop</a>
+        </div>
+      </nav>
+      <div class="mobileNavHeadBand">
+        <div class="flexOuterSpaceBetween">
+          <div class="flexOuterStart">
+            <span class="look">
+              <i class="fa fa-search"></i>
+            </span>
+            <input type="text" id="search" class="window"/>
+          </div>
+          <div class="flexOuterEnd">
+            <div class="hamburger">
+              <div class="navHR"></div>
+              <div class="navHR"></div>
+              <div class="navHR"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="mainTitle">vue.js</h1>
+      <h2 class="shadowTitle">NOTEBOOK</h2>
+    </header>
+    <article class="appScreen">
+      <div class="flexOuterCenter">
+
+        <div class="comp" id="app0">it's {{ message }}</div>
+
+        <div class="comp" id="app1">
+          <a href="#" v-bind:title="message">oil.boil()</a>
+        </div>
+
+        <div class="comp" id="app2">
+          <div v-if="seen">Don't fall in the olives' oil, boy!</div>
+          <button class="door" id="app2Butt">theNaj</button>
+        </div>
+
+        <div class="comp" id="app3">
+          <ol>
+            <li v-for="todo in todos">
+              {{ todo.text }}
+            </li>
+          </ol>
+        </div>
+
+        <div class="comp" id="app4">
+          <div>{{ message }}</div>
+          <input class="window" v-model="message"/>
+        </div>
+
+      </div>
+    </article>
+    <article class="geoBlock">
+      <h3 class="geo"></h3>
+      <section class="map"></section>
+      <section class="locales"></section>
+      <section class="reviews"></section>
+      <section class="socialMedia"></section>
+    </article>
+    <footer>
+      <div class="flexOuterCenter">
+        <a class="footerNav" href="#">blog</a>
+        <span>|</span>
+        <a class="footerNav" href="#">sitemap</a>
+        <span>|</span>
+        <a class="footerNav" href="#">terms of use</a>
+        <span>|</span>
+        <a class="footerNav" href="#">geoSkogen</a>
+      </div>
+    </footer>
   </div>
 </body>
 
+<script src="lib/mobile-nav-menu.js"></script>
 <script src="lib/script1.js"></script>
 
 </html>
