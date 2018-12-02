@@ -20,6 +20,7 @@
 </head>
 <body>
   <div id="appShell">
+
     <nav class="mobileNavMenu">
       <div class="flexOuterEnd">
         <a class="mobileNav" id="closeMobileNav" href="#">&laquo;</a><br/>
@@ -40,15 +41,24 @@
         <a class="mobileNav" href="#">shop</a><br/>
       </div>
     </nav>
+
     <div class="flexOuterCenter">
       <article class="mobileSearchModal">
-        <div class="flexOuterEnd"><span id="closeSearchModal">&times;</span></div>
+        <div class="flexOuterEnd">
+          <span id="closeSearchModal">
+            <a href="#">&times;</a>
+          </span>
+        </div>
         <input type="text" id="searchBar" class="window"/>
       </article>
     <div class="flexOuterCenter">
+
     <header>
       <nav class="wideNavHeadBand">
         <div class="flexOuterSpaceBetween">
+          <span class="look">
+            <i class="fa fa-search"></i>
+          </span>
           <a class="headerNav" href="#">home</a>
           <a class="headerNav" href="#">about</a>
           <a class="headerNav" href="#">contact</a>
@@ -59,7 +69,7 @@
       <div class="mobileNavHeadBand">
         <div class="flexOuterSpaceBetween">
           <div class="flexOuterStart">
-            <span class="look" id="openSearchModal">
+            <span class="look">
               <i class="fa fa-search"></i>
             </span>
           </div>
@@ -75,7 +85,9 @@
       <h1 class="mainTitle">vue.js</h1>
       <h2 class="shadowTitle">NOTEBOOK</h2>
     </header>
+
     <article class="appScreen">
+
       <div class="flexOuterCenter">
 
         <div class="comp" id="app0">it's {{ message }}</div>
@@ -103,7 +115,8 @@
         </div>
 
       </div>
-    </article>
+    </article><!--appScreen-->
+
     <article class="geoBlock">
       <h3 class="geo"></h3>
       <section class="map"></section>
@@ -111,6 +124,7 @@
       <section class="reviews"></section>
       <section class="socialMedia"></section>
     </article>
+
     <footer>
       <div class="flexOuterCenter">
         <a class="footerNav" href="#">blog</a>
@@ -122,7 +136,8 @@
         <a class="footerNav" href="#">geoSkogen</a>
       </div>
     </footer>
-  </div>
+
+  </div><!--appShell-->
 </body>
 
 <script src="lib/search-modal.js"></script>

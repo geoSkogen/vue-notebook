@@ -72,6 +72,14 @@ a.headerNav:hover {
   z-index: 12;
 }
 
+#closeSearchModal {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0.25em;
+  cursor: pointer;
+  color: white;
+}
+
 nav.mobileNavMenu {
   background-color: lightsteelblue;
   z-index: 11;
@@ -138,6 +146,7 @@ button.door {
 
 span.look {
   margin: 0.8em 0.8em 0 0.8em;
+  cursor: pointer;
 }
 
 i[class="fa fa-search"] {
@@ -201,6 +210,7 @@ article.appScreen {
 }
 
 article.geoBlock {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -216,6 +226,7 @@ section.reviews {
 }
 
 footer {
+  width: 100%;
   background-color: darkgrey;
   padding: 1em;
 }
